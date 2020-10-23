@@ -8,7 +8,7 @@ namespace SnakeAndLadderSimulator
         /// <param name="args">The arguments.</param>
         public static void Main(string[] args)
         {
-            int playerPosition = 0;
+            SnakeAndLadderPlay p = new SnakeAndLadderPlay();
         }
     }
 }
