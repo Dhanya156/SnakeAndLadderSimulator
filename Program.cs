@@ -10,6 +10,7 @@ namespace SnakeAndLadderSimulator
         {
             SnakeAndLadderPlay play = new SnakeAndLadderPlay();
             play.RollingADie();
+            play.CheckForOption();
         }
     }
 }
