@@ -41,18 +41,17 @@ namespace SnakeAndLadderSimulator
                     if (finalPosition > 50)
                     {
                         finalPosition = currentPosition;
-                        Console.WriteLine("The Player at position" + finalPosition);
+                        //Console.WriteLine("The player is at position" + finalPosition);
                     }
                     else
                     {
                         currentPosition = finalPosition;
                         Console.WriteLine("The Player at position" + currentPosition);
                     }
-
                     break;
                 default:
                     finalPosition = currentPosition - dieNumber;
-                    Console.WriteLine("Snake, current Position: " + currentPosition + ", Die Rolled: " + dieNumber );
+                    Console.WriteLine("Snake, current Position: " + currentPosition + ", Die Number: " + dieNumber );
                     currentPosition = finalPosition;
                     if (currentPosition < 0)
                     {
@@ -61,6 +60,12 @@ namespace SnakeAndLadderSimulator
                     }
                     else
                         Console.WriteLine("The player at position" + finalPosition);
+
+                        //Console.WriteLine("The player is at position" + currentPosition);
+                    }
+                    //else
+                        //Console.WriteLine("The player is at position" + finalPosition);
+
                     break;      
             }
         }
@@ -71,7 +76,7 @@ namespace SnakeAndLadderSimulator
             {
                 if(finalPosition==50)
                 {
-                    Console.WriteLine("Player Reached Winning Position");
+                    Console.WriteLine("player reached winning position");
                     break;
                 }
                 else
@@ -80,7 +85,7 @@ namespace SnakeAndLadderSimulator
                     CheckForOption();   
                 }
                 numOfTimeDieRoll++;
-                Console.WriteLine(numOfTimeDieRoll);
+                //Console.WriteLine(numOfTimeDieRoll);
             }
         }
     }
