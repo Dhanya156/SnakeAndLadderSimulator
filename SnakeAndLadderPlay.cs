@@ -38,7 +38,16 @@ namespace SnakeAndLadderSimulator
                 case 1:
                     finalPosition = currentPosition + dieNumber;
                     Console.WriteLine("Ladder, current Position: " + currentPosition + ", Die Rolled: " + dieNumber + ", Final Position: " + finalPosition);
-                    currentPosition = finalPosition;
+                    if (finalPosition > 50)
+                    {
+                        finalPosition = currentPosition;
+                        Console.WriteLine("The Player at position" + finalPosition);
+                    }
+                    else
+                    {
+                        currentPosition = finalPosition;
+                        Console.WriteLine("The Player at position" + currentPosition);
+                    }
 
                     break;
                 default:
@@ -48,10 +57,10 @@ namespace SnakeAndLadderSimulator
                     if (currentPosition < 0)
                     {
                         currentPosition = 0;
-                        Console.WriteLine("the final position is" + currentPosition);
+                        Console.WriteLine("The player at position" + currentPosition);
                     }
                     else
-                        Console.WriteLine("the final position is" + finalPosition);
+                        Console.WriteLine("The player at position" + finalPosition);
                     break;      
             }
         }
@@ -62,7 +71,7 @@ namespace SnakeAndLadderSimulator
             {
                 if(finalPosition==50)
                 {
-                    Console.WriteLine("the player at winning position");
+                    Console.WriteLine("Player Reached Winning Position");
                     break;
                 }
                 else
