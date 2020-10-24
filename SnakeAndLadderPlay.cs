@@ -41,12 +41,12 @@ namespace SnakeAndLadderSimulator
                     if (finalPosition > 50)
                     {
                         finalPosition = currentPosition;
-                        Console.WriteLine("The player is at position" + finalPosition);
+                        //Console.WriteLine("The player is at position" + finalPosition);
                     }
                     else
                     {
                         currentPosition = finalPosition;
-                        Console.WriteLine("The player is at position" + currentPosition);
+                        //Console.WriteLine("The player is at position" + currentPosition);
                     }
                     break;
                 default:
@@ -56,10 +56,10 @@ namespace SnakeAndLadderSimulator
                     if (currentPosition < 0)
                     {
                         currentPosition = 0;
-                        Console.WriteLine("The player is at position" + currentPosition);
+                        //Console.WriteLine("The player is at position" + currentPosition);
                     }
-                    else
-                        Console.WriteLine("The player is at position" + finalPosition);
+                    //else
+                        //Console.WriteLine("The player is at position" + finalPosition);
                     break;      
             }
         }
@@ -79,7 +79,7 @@ namespace SnakeAndLadderSimulator
                     CheckForOption();   
                 }
                 numOfTimeDieRoll++;
-                Console.WriteLine(numOfTimeDieRoll);
+                //Console.WriteLine(numOfTimeDieRoll);
             }
         }
     }
